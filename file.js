@@ -28,7 +28,7 @@ if(!fs.existsSync('./assets')){
     if(err){
         console.log(err)
     }
-    console.log('folder created.')
+    console.log('folder created.');
 })
 }else{
     fs.rmdir('./assets', (err) => {
