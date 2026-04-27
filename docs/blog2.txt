@@ -1,0 +1,42 @@
+const blogContent = `
+# The Day I Tried to Be Productive and Failed Beautifully
+
+There are two kinds of people:
+- Those who wake up early and conquer the world
+- Those who wake up and negotiate with life for 30 more minutes in bed
+
+I belong to the second group.
+
+## Morning Chaos
+I started the day with motivation… or what I *thought* was motivation.  
+I opened my laptop, stared at it like it owed me money, and called it “planning.”
+
+My to-do list was ambitious:
+- Be productive
+- Fix my life
+- Drink water (optional)
+
+Then I watched videos about productivity instead of actually being productive. Classic move.
+
+## Afternoon Reality Check
+At some point, I checked my phone “for a minute.”
+
+That minute turned into:
+- memes
+- random facts I didn’t need
+- and a deep dive into why cats behave like unpaid landlords
+
+Time disappeared. I suspect it left the country.
+
+## Evening Reflection
+I tried to recover the day by writing notes like:
+“Be better tomorrow.”
+
+Which is basically code for: I will probably do this again.
+
+## Final Thought
+Not every day has to be productive.  
+Some days are just for existing, thinking, and mildly confusing yourself on the internet.
+
+And honestly… that’s still a kind of progress.
+`;
