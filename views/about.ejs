@@ -1,31 +1,30 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | <%= title %></title>
-  </head>
+  <%- include('./partials/head.ejs') %>
 
   <body>
-    <nav>
-      <div class="site-title">
-        <a href="/"><h1>Blog Bold</h1></a>
-        <p>An aesthetic site</p>
-      </div>
-
-      <ul>
-        <li><a href="/">Blogs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/create">New Blog</a></li>
-      </ul>
-    </nav>
+    <%- include('./partials/nav.ejs') %>
 
     <div class="About content">
       <h2>About us</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam cupiditate libero vero dicta, corporis optio, incidunt ipsum labore pariatur atque dignissimos. Illo esse necessitatibus officiis quasi alias cumque exercitationem.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam cupiditate libero vero dicta, corporis optio, incidunt ipsum labore pariatur atque dignissimos. Illo esse necessitatibus officiis quasi alias cumque exercitationem.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam cupiditate libero vero dicta, corporis optio, incidunt ipsum labore pariatur atque dignissimos. Illo esse necessitatibus officiis quasi alias cumque exercitationem.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        quisquam cupiditate libero vero dicta, corporis optio, incidunt ipsum
+        labore pariatur atque dignissimos. Illo esse necessitatibus officiis
+        quasi alias cumque exercitationem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        quisquam cupiditate libero vero dicta, corporis optio, incidunt ipsum
+        labore pariatur atque dignissimos. Illo esse necessitatibus officiis
+        quasi alias cumque exercitationem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        quisquam cupiditate libero vero dicta, corporis optio, incidunt ipsum
+        labore pariatur atque dignissimos. Illo esse necessitatibus officiis
+        quasi alias cumque exercitationem.
+      </p>
     </div>
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>
-
-
