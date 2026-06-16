@@ -1,6 +1,24 @@
 const express = require("express");
+const morgan = require('morgan')
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+dotenv.config()
+
+
 
 const app = express();
+
+//connect to db
+
+const dbURI =  process.env.DB_URI
+console.log(dbURI)
+
+mongoose.connect(dbURI)
+.then((result) => console.log('connected to mongodb'))
+.catch((err) => console.log(err))
+
+
+
 
 //register view engine
 app.set("view engine", "ejs");
@@ -13,12 +31,10 @@ app.listen(3000);
 
 // })
 
-// app.use((req,res) => {
-//   console.log('new request made')
-//   console.log('host :', req.hostname)
-//   console.log('path', req.path)
-//   console.log('method:', req.method)
-// })
+
+//middleware & static files
+app.use(express.static('public'))
+app.use(morgan('dev'));
 
 app.get("/", (req, res) => {
 

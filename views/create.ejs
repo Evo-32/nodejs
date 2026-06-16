@@ -4,17 +4,67 @@
   <body>
     <% const name= 'mario' %> <%- include('./partials/nav.ejs') %>
 
-    <div class="create-blog content">
-      <form>
-        <label for="title">Blog title :</label>
-        <input type="text" id="title" required />
-        <label for="snippet">Blog snippet :</label>
-        <input type="text" id="snippet" required />
-        <label for="body">Blog body :</label>
-        <textarea id="body" required></textarea>
-        <button>Submit</button>
-      </form>
+    <div class="create-blog content flex justify-center mt-10">
+  <form class="w-full max-w-lg p-8 rounded-xl shadow-lg ">
+
+    <h2 class="text-xl font-semibold  mb-6">
+      Create a New Blog
+    </h2>
+
+    <div class="mb-5">
+      <label
+        for="title"
+        class="block text-sm font-medium mb-2"
+      >
+        Blog title
+      </label>
+      <input
+        type="text"
+        id="title"
+        required
+        class="w-full rounded-lg border border-gray-500 px-4 py-3 text-white outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500"
+      />
     </div>
+
+    <div class="mb-5">
+      <label
+        for="snippet"
+        class="block text-sm font-semibold mb-2"
+      >
+        Blog snippet
+      </label>
+      <input
+        type="text"
+        id="snippet"
+        required
+        class="w-full rounded-lg border border-gray-500 px-4 py-3 text-white outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500"
+      />
+    </div>
+
+    <div class="mb-6">
+      <label
+        for="body"
+        class="block text-sm font-semibold mb-2"
+      >
+        Blog body
+      </label>
+      <textarea
+        id="body"
+        rows="2"
+        required
+        class="w-full rounded-lg border border-gray-500 px-4 py-3 text-white outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500"
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="rounded-lg bg-pink-700 px-4 py-3 font-semibold text-black transition hover:bg-orange-400"
+    >
+      Submit Blog
+    </button>
+
+  </form>
+</div>
     <%- include('./partials/footer.ejs') %>
   </body>
 </html>
